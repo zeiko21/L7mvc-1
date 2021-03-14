@@ -1,3 +1,6 @@
+//tinfo200:[2020-03-12-zeiko21-dykstra1]- provides configuration for the logging system in Asp.net Core. I
+//tinfo200:[2020-03-12-zeiko21-dykstra1]- called after the program.cs is executed
+
 using ContosoUniversity.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Builder;
@@ -24,7 +27,6 @@ namespace ContosoUniversity
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
 
-            /////placeholder
         { 
               services.AddDbContext<SchoolContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));

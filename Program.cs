@@ -1,3 +1,5 @@
+//tinfo200:[2020-03-12-zeiko21-dykstra1]-This calls the DbInitializer.initailize method.
+
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;

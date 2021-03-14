@@ -1,12 +1,18 @@
-﻿using ContosoUniversity.Models;
+﻿//tinfo200:[2020-03-12-zeiko21-dykstra1]- Contains the extended information of the students  gathered from the Models Folder.
+//tinfo200:[2020-03-12-zeiko21-dykstra1]- This checks if database exists and loads a new one in the event it does not have it
+//tinfo200:[2020-03-12-zeiko21-dykstra1]- if the database is there, no action is taken
+
+using ContosoUniversity.Models;
 using System;
 using System.Linq;
 
 namespace ContosoUniversity.Data
 {
-    public static class DbInitializer
+    public static class DbInitializer 
     {
-        //placeholder
+      
+       
+        
         public static void Initialize(SchoolContext context)
         {
             context.Database.EnsureCreated();
